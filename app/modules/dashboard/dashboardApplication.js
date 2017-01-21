@@ -14,6 +14,18 @@ var dashboard = angular.module('dashboard', ['ui.router', 'ngAnimate','ngMateria
 
 dashboard.config(["$stateProvider", function ($stateProvider) {
 
+
+    //RFID page state
+    $stateProvider.state('app.rfid', {
+        url: '/rfid',
+        templateUrl: 'app/modules/dashboard/views/rfid.html',
+        controller: 'RFIDController',
+        controllerAs: 'vm',
+        data: {
+            pageTitle: 'RFID Managements'
+        }
+    });
+
     //dashboard home page state
     $stateProvider.state('app.dashboard', {
         url: '/dashboard',

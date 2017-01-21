@@ -112,6 +112,11 @@ function ($rootScope, $scope, $state, $location, Flash,appSettings) {
     //Main menu items of the dashboard
     vm.menuItems = [
         {
+            title: "RFID Management",
+            icon: "gears",
+            state: "rfid"
+        },
+        {
             title: "Dashboard",
             icon: "dashboard",
             state: "dashboard"
